@@ -22,7 +22,7 @@
   <br>
   <select name="codigoEquipo">
   <?php
-    $mysql=new mysqli("localhost","root","","torneo");
+    $mysql=new mysqli("localhost","adminDqN9tbB","JQ-4V9JeDLmk","torneo");
     if ($mysql->connect_error)
       die("Problemas con la conexión a la base de datos");
 
