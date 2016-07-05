@@ -25,7 +25,7 @@
   <h1>Gestion de Jugadores - CUD</h1>
 
   <?php
-    $mysql=new mysqli("localhost","adminDqN9tbB","JQ-4V9JeDLmk","torneo");
+    $mysql=new mysqli("127.6.208.130:3306","adminDqN9tbB","JQ-4V9JeDLmk","torneo");
     if ($mysql->connect_error)
       die("Problemas con la conexión a la base de datos");
   

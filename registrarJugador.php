@@ -9,7 +9,7 @@
 
   <?php
     
-    $mysql=new mysqli("localhost","adminDqN9tbB","JQ-4V9JeDLmk","torneo");  
+    $mysql=new mysqli("https://torneos-equiposf.rhcloud.com/phpmyadmin/","adminDqN9tbB","JQ-4V9JeDLmk","torneo");  
     if ($mysql->connect_error)
       die('Problemas con la conexion a la base de datos');
     
