@@ -23,9 +23,10 @@
 </head>  
 <body>
   <h1>Gestion de Jugadores - CUD</h1>
+  <hr>
 
   <?php
-    $mysql = new mysqli(getenv('OPENSHIFT_MYSQL_DB_HOST'), getenv('OPENSHIFT_MYSQL_DB_USERNAME'), getenv('OPENSHIFT_MYSQL_DB_PASSWORD'), "torneo", getenv('OPENSHIFT_MYSQL_DB_PORT'));
+    $mysql = new mysqli(getenv('OPENSHIFT_MYSQL_DB_HOST'), "", "", "torneo", getenv('OPENSHIFT_MYSQL_DB_PORT'));
     if ($mysql->connect_error)
       die("Problemas con la conexión a la base de datos -- ".$mysql->connect_error);
   
