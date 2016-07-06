@@ -25,7 +25,11 @@
   <h1>Gestion de Jugadores - CUD</h1>
 
   <?php
-    $mysql=new mysqli("127.6.208.130:3306","adminDqN9tbB","JQ-4V9JeDLmk","torneo");
+    define( "DB_SERVER",    $_ENV['OPENSHIFT_DB_HOST'] );
+    define( "DB_USER",      $_ENV['OPENSHIFT_DB_USERNAME'] ); 
+    define( "DB_PASSWORD",  $_ENV['OPENSHIFT_DB_PASSWORD'] ); 
+    define( "DB_DATABASE",  "torneo" ); 
+    $mysql=new mysqli(DB_SERVER, DB_USER,DB_PASSWORD, DB_DATABASE);
     if ($mysql->connect_error)
       die("Problemas con la conexión a la base de datos -- ".$mysql->connect_error);
   
